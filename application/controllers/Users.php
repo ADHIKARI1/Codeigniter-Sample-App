@@ -75,10 +75,10 @@ class Users extends CI_Controller
 					);
 				$this->session->set_userdata($user_data);
 				$this->session->set_flashdata('login_success', 'You are now logged in');
-				//redirect('home/index');
+				redirect('home/index');
 
-				$data['main_view'] = "admin_view";
-				$this->load->view('layout/main', $data);
+				/*$data['main_view'] = "admin_view";
+				$this->load->view('layout/main', $data);*/
 			}
 			else
 			{
